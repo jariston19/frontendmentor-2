@@ -1,0 +1,171 @@
+@media screen and (min-width: 300px) {
+  footer {
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    position: static;
+  }
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border-color: hsl(215, 32%, 27%);
+  border-width: 0 0 1px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 600px;
+  background-color: hsl(216, 50%, 16%);
+  margin: 4% auto;
+  border-radius: 15px;
+  box-shadow: 0 50px 25px 25px hsl(216, 80%, 8%);
+}
+
+.containercontents {
+  padding: 25px;
+  width: 300px;
+  height: 310px;
+}
+
+.containercontents img {
+  width: 300px;
+  height: 310px;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.overlaycontents {
+  border-radius: 15px;
+  width: 300px;
+  height: 310px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.preview {
+  transform: scale(0.15);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.overlay:hover .overlaycontents {
+  opacity: .2;
+}
+
+.overlay:hover .preview {
+  opacity: 1;
+}
+
+/* description bottom */
+.container-description {
+  width: 300px;
+  height: 210px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.itemtitle {
+  margin: 0;
+  font-size: 18px;
+}
+
+.container-description a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.valueicontext {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 3px;
+  position: relative;
+  bottom: 2px;
+}
+
+.diviconleft {
+  text-align: left;
+  display: inline-block;
+  width: 49%;
+  font-size: 15px;
+}
+
+.diviconright {
+  text-align: right;
+  display: inline-block;
+  width: 49%;
+  font-size: 15px;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.valueicontime {
+  text-align: right;
+  color: hsl(215, 51%, 70%);
+  position: relative;
+  bottom: 2px;
+}
+
+.avatar img {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+  width: 30px;
+  float: left;
+}
+
+.avatar p {
+  margin-left: 50px;
+  position: relative;
+  top: 6px;
+}
+
+.author {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+/* footer */
+.attribution {
+  display: flex;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
